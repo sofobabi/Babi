@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Fascinate&family=Outfit:wght@200;400;600;700&family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+font-family: 'Red Hat Display', sans-serif;
+min-height: 100vh;
+background-image: url(images/pattern-background-desktop.svg);
+background-attachment: fixed;
+background-repeat: no-repeat;
+background-size: contain;
+background-color: hsl(225, 100%, 94%);
+position: relative;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.container { 
+max-width: 450px;
+background: white;
+border-radius: 20px;
+overflow: hidden;
+}
+
+.hero {
+margin-bottom: 45px;
+}
+
+.card-text {
+padding-left: 10.66%;
+padding-right: 10.66%;
+padding-bottom: 10.66%;
+text-align: center;
+}
+
+.title h1 {
+font-family: 'Red Hat Display'; 
+font-style: normal;
+font-weight: 900;
+font-size: 28px;
+line-height: 37px;
+color: hsl(223, 47%, 23%);
+
+}
+
+.card-text p {
+margin-top: 17px;
+font-family: 'Red Hat Display';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 26px;
+color:hsl(224, 23%, 55%);
+width: 354;
+}
+
+.annual-plan-box {
+width: 354px;;
+background: #F7F9FF;
+border-radius: 11px;
+display: flex;
+padding: 25px;
+align-items: center;
+justify-content: space-between;
+margin-bottom: 47px;
+margin-top: 20px;
+}
+
+.annual-plan-price {
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+.annual-plan-price div {
+    margin-left: 20px;
+   
+}
+
+.annual-plan-price div h2 {
+font-family: 'Red Hat Display';
+font-style: normal;
+font-weight: 900;
+font-size: 16px;
+line-height: 21px;
+color: #1F2E55;
+
+
+}
+
+.annual-plan-price div p {
+font-family: 'Red Hat Display';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 21px;
+color: #717FA6;
+margin-top: 6px;
+}
+
+.annual-plan-box a {
+font-family: 'Red Hat Display';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 19px;
+text-decoration-line: underline;
+color: #382AE1;
+transition: 0.15s;
+}
+
+.annual-plan-box a:hover {
+ opacity: 0.7;
+ text-decoration-line: none;
+   
+}
+
+a.payment-button {
+display: block;
+background: #382AE1;
+box-shadow: 0px 20px 20px rgba(56, 42, 225, 0.190291);
+border-radius: 11px;
+color: white;
+padding: 15px;
+font-family: 'Red Hat Display';
+font-style: normal;
+font-weight: 900;
+font-size: 15px;
+line-height: 20px;
+text-decoration: none;
+transition: 0.15s;
+margin-bottom: 32px;
+}
+
+a.payment-button:hover {
+    opacity: 0.7;
+}
+a.cancel-button {
+font-family: 'Red Hat Display';
+font-style: normal;
+font-weight: 900;
+font-size: 15px;
+line-height: 20px;
+color: #717FA6;
+text-decoration: none;
+transition: 0.15s;
+}
+
+a.cancel-button:hover {
+color: hsl(223, 47%, 23%);
+}
+
+@media screen and (max-width: 425px) {
+    body {
+        background-image: url(images/pattern-background-mobile.svg);
+        font-size: 15px;
+        
+    }
+
+    .container {
+        max-width: 87%;
+    }
+    
+    .title h1 {
+        font-size: 22px;
+    }
+
+    .annual-plan-box {
+        padding: 15px;
+        width: 275px;
+        line-height: 19px;
+    }
+
+    .annual-plan-price div {
+        font-size: 14px;
+       
+    }
+
+    .annual-plan-box a {
+        font-size: 13px;
+    }
+}
